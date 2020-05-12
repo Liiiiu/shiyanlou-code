@@ -1,11 +1,4 @@
-a = 0
-while(a <= 99):
-    a = a + 1
-    if a % 7 == 0: #如果是七的倍数跳过循环
-        continue
-    elif a % 10 == 7: #个位是七
-        continue
-    elif a // 10 == 7: #十位是七
-        continue
-    else:
-        print(a)
+for i in range(1,101): #输出为1-100的数
+    if (i % 7 == 0) or (i % 10 == 7) or (i // 10 ==7):
+        continue  # 跳过当前循环
+    print(i)
